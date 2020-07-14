@@ -8,6 +8,17 @@
         "format": "prettier --write \"**/*.{js,json,css,scss}\"",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "src/**/*.js": "eslint",
+        "**/*.{js,json,css,scss}": [
+            "prettier --write"
+        ]
+    },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/d8m18n/wfd-wordpress-starter-theme.git"
@@ -23,6 +34,8 @@
         "eslint": "^7.4.0",
         "eslint-config-prettier": "^6.11.0",
         "eslint-plugin-react": "^7.20.3",
+        "husky": "^4.2.5",
+        "lint-staged": "^10.2.11",
         "prettier": "^2.0.5"
     }
 }
