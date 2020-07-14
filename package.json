@@ -1,0 +1,24 @@
+{
+  "name": "wfd-starter-theme",
+  "version": "1.0.0",
+  "description": "A modern WordPress starter theme for WordPress and the Gutenberg editor.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d8m18n/wfd-wordpress-starter-theme.git"
+  },
+  "author": "Damian Saunders",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/d8m18n/wfd-wordpress-starter-theme/issues"
+  },
+  "homepage": "https://github.com/d8m18n/wfd-wordpress-starter-theme#readme",
+  "devDependencies": {
+    "@wordpress/eslint-plugin": "^7.1.0",
+    "eslint": "^7.4.0",
+    "eslint-plugin-react": "^7.20.3"
+  }
+}
