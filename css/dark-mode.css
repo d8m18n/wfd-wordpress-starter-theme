@@ -12,34 +12,40 @@ input,
 select,
 optgroup,
 textarea {
-  color: #E6E1DC;
+    color: #e6e1dc;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #E6E1DC;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #e6e1dc;
 }
 
-abbr, acronym {
-  border-color: #999;
+abbr,
+acronym {
+    border-color: #999;
 }
 
 .site-title {
-  color: #CCCCCD;
+    color: #cccccd;
 }
 
 .site-description,
 .site-footer {
-  color: #8A8A8A;
+    color: #8a8a8a;
 }
 
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
-  border-color: #1D1B18;
+    border-color: #1d1b18;
 }
 
 body {
-  background: #000;
+    background: #000;
 }
 
 /*--------------------------------------------------------------
@@ -50,26 +56,27 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border-color: #333 #333 #444;
-  background: #191919;
-  color: rgba(255, 255, 255, 0.8);
+    border-color: #333 #333 #444;
+    background: #191919;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  border-color: #333 #444 #555;
+    border-color: #333 #444 #555;
 }
 
-button:active, button:focus,
+button:active,
+button:focus,
 input[type="button"]:active,
 input[type="button"]:focus,
 input[type="reset"]:active,
 input[type="reset"]:focus,
 input[type="submit"]:active,
 input[type="submit"]:focus {
-  border-color: #555 #444 #444;
+    border-color: #555 #444 #444;
 }
 
 input[type="text"],
@@ -88,8 +95,8 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-  color: #999;
-  border-color: #333;
+    color: #999;
+    border-color: #333;
 }
 
 input[type="text"]:focus,
@@ -108,11 +115,11 @@ input[type="datetime"]:focus,
 input[type="datetime-local"]:focus,
 input[type="color"]:focus,
 textarea:focus {
-  color: #EEE;
+    color: #eee;
 }
 
 select {
-  border-color: #333;
+    border-color: #333;
 }
 
 input[type="text"]:focus,
@@ -131,11 +138,11 @@ input[type="datetime"]:focus,
 input[type="datetime-local"]:focus,
 input[type="color"]:focus,
 textarea:focus {
-  color: #EEE;
+    color: #eee;
 }
 
 fieldset {
-  border-color: #3F3F3F;
+    border-color: #3f3f3f;
 }
 
 /*--------------------------------------------------------------
@@ -143,11 +150,13 @@ fieldset {
 --------------------------------------------------------------*/
 
 a {
-  color: #00a0d2;
+    color: #00a0d2;
 }
 
-a:hover, a:focus, a:active {
-  color: #66c6e4;
+a:hover,
+a:focus,
+a:active {
+    color: #66c6e4;
 }
 
 /*--------------------------------------------------------------
@@ -155,7 +164,7 @@ a:hover, a:focus, a:active {
 --------------------------------------------------------------*/
 
 .screen-reader-text:focus {
-  color: #66c6e4;
+    color: #66c6e4;
 }
 
 /*--------------------------------------------------------------
@@ -163,10 +172,10 @@ a:hover, a:focus, a:active {
 --------------------------------------------------------------*/
 
 .entry-meta {
-  color: #8A8A8A;
+    color: #8a8a8a;
 }
 
 .entry-footer {
-  color: #8A8A8A;
-  border-color: #1D1B18;
+    color: #8a8a8a;
+    border-color: #1d1b18;
 }

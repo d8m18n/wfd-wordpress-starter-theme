@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 
 body {
-	background: #000;
+    background: #000;
 }
 
 /*--------------------------------------------------------------
@@ -13,12 +13,18 @@ body {
 body,
 .wp-block,
 .editor-post-title__block .editor-post-title__input,
-h1, h2, h3, h4, h5, h6 {
-  color: #E6E1DC;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #e6e1dc;
 }
 
-abbr, acronym {
-  border-color: #999;
+abbr,
+acronym {
+    border-color: #999;
 }
 
 /*--------------------------------------------------------------
@@ -26,15 +32,15 @@ abbr, acronym {
 --------------------------------------------------------------*/
 
 .wp-block a {
-  color: #00a0d2;
+    color: #00a0d2;
 }
 
 .wp-block a:visited {
-  color: #CCC;
+    color: #ccc;
 }
 
-.wp-block a:hover, 
-.wp-block a:focus, 
+.wp-block a:hover,
+.wp-block a:focus,
 .wp-block a:active {
-  color: #66c6e4;
+    color: #66c6e4;
 }
