@@ -1,0 +1,23 @@
+/* 
+ * We use generic color names here, and when we define the custom color 
+ * pallettes in includes/editor/editor-setup.php, and when we set their css 
+ * variables in src/scss/base/variables.css
+ * When we use a custom color pallette in Gutenberg ( The Editor ) WordPress 
+ * adds the following classes.
+ * If you choose primary-100 as the Background Color for a block, WordPress 
+ * adds .has-background and .has-primary-100-background-color to the block.
+ * If you choose primary-100 as the Color for a block, WordPress adds 
+ * .has-text-color and .has-primary-100-color to the block.
+ * See https://www.billerickson.net/wordpress-color-palette-button-styling-gutenberg/
+ * We're using SASS to extrapolate these variables into css variables and parse them through postcss
+ */
+
+@each $name, $color in $colors {
+    .has-#{$name}-color {
+        color: var(--#{$name});
+    }
+
+    .has-#{$name}-background-color {
+        background-color: var(--#{$name});
+    }
+}
