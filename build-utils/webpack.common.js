@@ -1,24 +1,16 @@
-const path = require("path");
+const commonPaths = require("./common-paths");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
-const TerserJSPlugin = require("terser-webpack-plugin");
-const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
-module.exports = {
+const config = {
     entry: {
-        frontend: "./src/js/index.js",
+        frontend: "./src/js/editor.js",
         editor: "./src/js/editor.js"
     },
     output: {
         filename: "js/[name].js",
-        path: path.resolve(__dirname, "./dist"),
+        path: commonPaths.outputPath,
         publicPath: "../"
-    },
-    mode: "development",
-    devtool: "source-map",
-    optimization: {
-        minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})]
     },
     module: {
         rules: [
@@ -64,11 +56,8 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: "css/[name].css"
         }),
-        new CleanWebpackPlugin(),
-        new BrowserSyncPlugin({
-            files: "**/*.php",
-            injectChanges: true,
-            proxy: "https://rss.local/"
-        })
+        new CleanWebpackPlugin()
     ]
 };
+
+module.exports = config;

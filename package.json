@@ -1,14 +1,15 @@
 {
-    "name": "wfd-child",
-    "version": "1.0.7",
+    "name": "wfd",
+    "version": "1.0.0",
     "description": "WebFoundations child theme starter for Astra Theme based website projects.",
     "main": "/src/js/app.js",
     "scripts": {
         "checkFormat": "prettier --check \"**.*.{js,json,css,scss}\"",
         "format": "prettier --write \"**.*.{js,json,css,scss}\"",
-        "build": "npm run lint && webpack --config webpack.production.config.js && gulp bundle",
-        "dev": "npm run lint && gulp clean && webpack --watch --config webpack.dev.config.js",
+        "prod": "npm run lint && npm run build -- --env.env=prod && gulp bundle",
+        "dev": "npm run lint && gulp clean && npm run build -- --watch --env.env=dev",
         "lint": "eslint src",
+        "build": "webpack",
         "test": "echo 'Error: no test specified' && exit 1"
     },
     "husky": {
@@ -66,7 +67,8 @@
         "sass-loader": "^9.0.2",
         "terser-webpack-plugin": "^2.3.0",
         "webpack": "^4.41.2",
-        "webpack-cli": "^3.3.9"
+        "webpack-cli": "^3.3.9",
+        "webpack-merge": "^5.1.1"
     },
     "dependencies": {},
     "browsersList": [
