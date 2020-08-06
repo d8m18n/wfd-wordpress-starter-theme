@@ -1,3 +1,4 @@
+const settings = require("./settings");
 const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 const TerserJSPlugin = require("terser-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
@@ -12,7 +13,7 @@ const config = {
         new BrowserSyncPlugin({
             files: "**/*.php",
             injectChanges: true,
-            proxy: "https://wfdtheme.local/"
+            proxy: `https://${settings.proxyDomain}/`
         })
     ]
 };
